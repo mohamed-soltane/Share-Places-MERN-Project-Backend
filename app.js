@@ -26,8 +26,10 @@ app.use((error, req, res, next) => {
   res.json({message: error.message || 'An unknown error occurred!'});
 });
 
-mongoose.connect('mongodb+srv://Soltane1992:Soltane92@mern-o9qww.mongodb.net/places?retryWrites=true&w=majority'
-    )
+mongoose.connect('mongodb+srv://Soltane1992:Soltane92@mern-o9qww.mongodb.net/places?retryWrites=true&w=majority',
+{ useNewUrlParser: true,
+  useUnifiedTopology: true 
+})
 .then(() => {
     app.listen(5000);
     console.log('Connected to DB');
