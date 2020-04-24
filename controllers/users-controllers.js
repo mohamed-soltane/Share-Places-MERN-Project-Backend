@@ -36,7 +36,7 @@ const signup = async (req, res, next) => {
         422
         )) ;
   }
-  const { name, email, password, places } = req.body;
+  const { name, email, password } = req.body;
    
   let existingUser
   try {
@@ -63,7 +63,7 @@ const signup = async (req, res, next) => {
     email,
     password,
     image: 'https://randomuser.me/api/portraits/men/43.jpg',
-    places
+    places: []
    });
  
    try {
