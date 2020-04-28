@@ -1,0 +1,8 @@
+{
+    "env":{
+        "DB_USER":"Soltane1992",
+        "DB_PASSWORD": "Soltane92",
+        "DB_NAME": "mern",
+        "GOOGLE_API_KEY": "AIzaSyC9PFPcf14PhOeAerfat2qOqzfR7gQW0sE"
+    }
+}
